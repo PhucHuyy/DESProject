@@ -1,0 +1,51 @@
+// {
+//     "version": "2.0.0",
+//     "tasks": [
+//         {
+//             "label": "build DES_project",
+//             "type": "shell",
+//             "command": "g++",
+//             "args": [
+//                 "-g",
+//                 "-I",
+//                 "${workspaceFolder}/include",
+//                 "${workspaceFolder}/src/DES.cpp",
+//                 "${workspaceFolder}/src/main.cpp",
+//                 "-o",
+//                 "${workspaceFolder}/bin/Debug/DES_project.exe"
+//             ],
+//             "group": {
+//                 "kind": "build",
+//                 "isDefault": true
+//             },
+//             "problemMatcher": ["$gcc"],
+//             "detail": "Build DES project"
+//         }
+//     ]
+// }
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build encrypt_and_send",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-I",
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/src/DES.cpp",
+                "${workspaceFolder}/src/encrypt_and_send.cpp",
+                "-o",
+                "${workspaceFolder}/bin/Debug/encrypt_and_send.exe",
+                "-lws2_32" // Thêm để link Winsock
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

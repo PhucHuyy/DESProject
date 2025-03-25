@@ -1,0 +1,54 @@
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+        
+//         {
+//             "name": "Debug DES_project",
+//             "type": "cppdbg",
+//             "request": "launch",
+//             "program": "${workspaceFolder}/bin/Debug/DES_project.exe",
+//             "args": [],
+//             "stopAtEntry": false,
+//             "cwd": "${workspaceFolder}",
+//             "environment": [],
+//             "externalConsole": true,          // Mở console riêng để xem đầu ra
+//             "MIMode": "gdb",
+//             "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
+//             "setupCommands": [
+//                 {
+//                     "description": "Enable pretty-printing for gdb",
+//                     "text": "-enable-pretty-printing",
+//                     "ignoreFailures": true
+//                 }
+//             ],
+//             "preLaunchTask": "build DES_project"  // Chạy build trước khi debug
+//         }
+//     ]
+// }
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug encrypt_and_send",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/Debug/encrypt_and_send.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:/App/codeblock/CodeBlocks/MinGW/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build encrypt_and_send"
+        }
+    ]
+}

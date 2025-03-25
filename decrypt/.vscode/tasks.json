@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build receive_and_decrypt",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-I",
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/src/DES.cpp",
+                "${workspaceFolder}/src/receive_and_decrypt.cpp",
+                "-o",
+                "${workspaceFolder}/bin/Debug/receive_and_decrypt.exe",
+                "-lws2_32"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

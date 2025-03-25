@@ -11,12 +11,12 @@
 # Trên Laptop A (Máy gửi)
 - Mở terminal trong VS Code hoặc Command Prompt tại thư mục dự án.
 - Compile file encrypt_and_send.cpp:
-    ```g++ -I ./include ./src/DES.cpp ./src/encrypt_and_send.cpp -o ./bin/Debug/encrypt_and_send.exe -lws2_32
+    ```g++ -I ./include ./src/DES.cpp ./src/encrypt_and_send.cpp -o ./bin/Debug/encrypt_and_send.exe -lws2_32```
 
 # Trên Laptop B (Máy nhận)
 - Mở terminal trong VS Code hoặc Command Prompt tại thư mục dự án.
 - Compile file receive_and_decrypt.cpp (thay 192.168.1.x trong code bằng IP của Laptop A trước khi compile):
-    ```g++ -I ./include ./src/DES.cpp ./src/receive_and_decrypt.cpp -o ./bin/Debug/receive_and_decrypt.exe -lws2_32
+    ```g++ -I ./include ./src/DES.cpp ./src/receive_and_decrypt.cpp -o ./bin/Debug/receive_and_decrypt.exe -lws2_32```
 
 # Cách Thực Thi
 # Điều kiện tiên quyết
@@ -25,12 +25,12 @@
 - Kiểm tra IP của Laptop A bằng lệnh ipconfig trong CMD.
 - Trên Laptop A (Máy gửi)
   + Chạy file thực thi:
-    ```.\bin\Debug\encrypt_and_send.exe
+    ```.\bin\Debug\encrypt_and_send.exe```
   + Đợi thông báo "Dang cho ket noi tu Laptop B...".
 
 - Trên Laptop B (Máy nhận)
   + Chạy file thực thi:
-    .\bin\Debug\receive_and_decrypt.exe
+    ```.\bin\Debug\receive_and_decrypt.exe```
   + Kết quả: File giải mã được lưu tại output/decrypted.txt.
 
 # Lưu ý

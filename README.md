@@ -1,5 +1,5 @@
-DES Encryption/Decryption qua Socket
-Dự án này sử dụng thuật toán DES để mã hóa file trên một máy (Laptop A) và gửi qua socket đến máy khác (Laptop B) để giải mã.
+# DES Encryption/Decryption qua Socket
+# Dự án này sử dụng thuật toán DES để mã hóa file trên một máy (Laptop A) và gửi qua socket đến máy khác (Laptop B) để giải mã.
 
 # Môi trường IDE
 IDE: Visual Studio Code (VS Code)
